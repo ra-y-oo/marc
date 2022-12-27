@@ -36,11 +36,11 @@ body {
   gap: 3em;
 }
 .flex .flex-item .card {
-  width: 325px;
+  width: 300px;
   margin: 0 auto;
 }
 .flex .flex-item .card img {
-  width: 325px;
+  width: 300px;
 }
 .flex .flex-item .card .items {
   border-bottom-left-radius: 30px;
