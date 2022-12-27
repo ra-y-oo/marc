@@ -63,6 +63,22 @@ body {
   color: var(--boxcol);
 }
 
+/*--------------------ABOUT PAGE STYLES-------------------------------*/
+section.about button {
+  padding: 10px;
+  background-color: transparent;
+}
+section.about button a {
+  text-decoration: none;
+  color: var(--fontcol);
+}
+section.about button:hover {
+  background-color: var(--fontcol);
+}
+section.about button:hover a {
+  color: var(--boxcol);
+}
+
 @media (min-width: 768px) {
   body {
     padding: 50px;
@@ -89,5 +105,9 @@ body {
   }
   .flex .flex-item .card img {
     width: 475px;
+  }
+  /*--------------------ABOUT PAGE STYLES-------------------------------*/
+  section.about {
+    max-width: 60%;
   }
 }/*# sourceMappingURL=style.css.map */

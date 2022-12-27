@@ -68,6 +68,27 @@ body{
     }
 }
 
+/*--------------------ABOUT PAGE STYLES-------------------------------*/
+
+section.about{
+
+     button{
+         padding: 10px;
+        background-color: transparent;
+        a{
+         text-decoration: none;
+        color: var(--fontcol);
+          }
+            }
+    button:hover{
+         background-color: var(--fontcol);
+         a{
+              color: var(--boxcol);
+        }
+        }
+}
+
+
 @media  (min-width: 768px){
     body{
         padding: 50px;
@@ -102,5 +123,10 @@ body{
             }
         }
         }
+    /*--------------------ABOUT PAGE STYLES-------------------------------*/
+    section.about{
+        max-width: 60%;
+    }
 }
+
 
