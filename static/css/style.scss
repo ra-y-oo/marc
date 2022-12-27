@@ -5,9 +5,12 @@
     --boxcol: #FFFFFF;
 }
 body{
-    padding: 15px;
+    padding: 30px;
     font-family: 'Poppins',sans-serif;
 }
+
+/*--------------------NAVBAR STYLES-------------------------------*/
+
 .nav{
     display: flex;
     flex-direction: column;
@@ -20,18 +23,58 @@ body{
             padding: 4px;
             background-color: var(--boxcol);
         }
-                .active{
+        .active{
             background-color: var(--fontcol);
             color: var(--boxcol);
         }
     }
 
 }
+
+/*--------------------CARD STYLES-------------------------------*/
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    .flex-item{
+        .card{
+            width: 375px;
+            img{
+               max-width: 375px;
+            }
+            .items{
+                border-bottom-left-radius: 30px;
+                border-bottom-right-radius: 30px;
+                background-color: var(--accentcol);
+                padding: 25px;
+            button{
+                padding: 10px;
+                background-color: transparent;
+                a{
+                    text-decoration: none;
+                    color: var(--fontcol);
+                }
+            }
+            button:hover{
+                background-color: var(--fontcol);
+                a{
+                    color: var(--boxcol);
+                }
+            }
+        }
+        }
+    }
+}
+
 @media  (min-width: 768px){
     body{
         padding: 50px;
     }
-        .nav{
+    
+/*--------------------NAVBAR STYLES-------------------------------*/
+
+     .nav{
         flex-direction: row;
         gap: 5em;
     }
@@ -42,5 +85,13 @@ body{
             color: var(--boxcol);
         }
     }
+ /*--------------------CARD STYLES-------------------------------*/
 
+    .flex{
+        display: flex;
+        flex-direction: row;
+        gap: 3em;
+        }
+    }
 }
+

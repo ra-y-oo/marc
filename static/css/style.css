@@ -5,10 +5,11 @@
 }
 
 body {
-  padding: 15px;
+  padding: 30px;
   font-family: "Poppins", sans-serif;
 }
 
+/*--------------------NAVBAR STYLES-------------------------------*/
 .nav {
   display: flex;
   flex-direction: column;
@@ -28,10 +29,44 @@ body {
   color: var(--boxcol);
 }
 
+/*--------------------CARD STYLES-------------------------------*/
+.flex {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+.flex .flex-item .card {
+  width: 375px;
+}
+.flex .flex-item .card img {
+  max-width: 375px;
+}
+.flex .flex-item .card .items {
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background-color: var(--accentcol);
+  padding: 25px;
+}
+.flex .flex-item .card .items button {
+  padding: 10px;
+  background-color: transparent;
+}
+.flex .flex-item .card .items button a {
+  text-decoration: none;
+  color: var(--fontcol);
+}
+.flex .flex-item .card .items button:hover {
+  background-color: var(--fontcol);
+}
+.flex .flex-item .card .items button:hover a {
+  color: var(--boxcol);
+}
+
 @media (min-width: 768px) {
   body {
     padding: 50px;
   }
+  /*--------------------NAVBAR STYLES-------------------------------*/
   .nav {
     flex-direction: row;
     gap: 5em;
@@ -40,5 +75,17 @@ body {
     transition: 1000ms ease;
     background-color: var(--fontcol);
     color: var(--boxcol);
+  }
+  /*--------------------CARD STYLES-------------------------------*/
+  .flex {
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+  }
+  .flex .card {
+    width: 100%;
+  }
+  .flex .card img {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
