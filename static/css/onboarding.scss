@@ -1,0 +1,47 @@
+
+:root{
+    --accentcol: #ecf4ff;
+    --fontcol: #000000;
+    --boxcol: #FFFFFF;
+}
+body{
+    background-color: var(--accentcol);
+}
+
+section.text{
+    margin-top: 30em;
+    .text-main{
+        display: inline-block;
+    }
+    hr{
+    margin: 0 ;
+    width: 50%;
+    }
+    .svg{
+    display: none;
+    }
+}
+
+@media  (min-width: 768px){
+    section.text{
+        .text-main{
+            display: inline-block;
+         }
+        margin-top: 40em;
+        .svg{
+        display: inline;
+        margin-top: 0;
+        float: right;
+    }
+    }
+    section.text:hover{
+        .text-main{
+            display: inline-block;
+         }
+        hr{
+            transition: 500ms;
+            width: 10%;
+        }
+
+    }
+}

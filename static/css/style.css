@@ -1,0 +1,44 @@
+:root {
+  --accentcol: #ecf4ff;
+  --fontcol: #000000;
+  --boxcol: #FFFFFF;
+}
+
+body {
+  padding: 30px;
+  font-family: "Poppins", sans-serif;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5em;
+  list-style: none;
+}
+.nav .nav-link {
+  text-decoration: none;
+  color: var(--fontcol);
+}
+.nav .nav-link .box {
+  padding: 4px;
+  background-color: var(--boxcol);
+}
+.nav .nav-link .active {
+  background-color: var(--fontcol);
+  color: var(--boxcol);
+}
+
+@media (min-width: 768px) {
+  body {
+    padding: 50px;
+  }
+  .nav {
+    flex-direction: row;
+    gap: 5em;
+  }
+  .nav-link:hover .box {
+    transition: 1000ms ease;
+    background-color: var(--fontcol);
+    color: var(--boxcol);
+  }
+}/*# sourceMappingURL=style.css.map */
