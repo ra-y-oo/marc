@@ -9,7 +9,8 @@ body {
 }
 
 section.text {
-  margin-top: 30em;
+  position: absolute;
+  bottom: 0;
 }
 section.text .text-main {
   display: inline-block;
@@ -28,6 +29,7 @@ section.text .svg {
   }
   section.text .text-main {
     display: inline-block;
+    margin-right: 90em;
   }
   section.text .svg {
     display: inline;
